@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costume Rental</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin: 0 10px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #home {
+      background: #ff5733;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #home .btn {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #services .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    #services .card {
+      background: #f4f4f4;
+      border-radius: 5px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    #services .card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    form input, form textarea, form button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .payment {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .payment .btn {
+      background: #0f9d58;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Costume Hub</div>
+    <nav>
+      <ul>
+        <li></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to Costume Hub</h1>
+    <p>Your one-stop shop for renting costumes for every occasion!</p>
+    <a href="#services" class="btn">Explore Costumes</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide a wide range of costumes for parties, plays, and events at affordable prices. Whether you're looking for traditional, modern, or fantasy costumes, we've got you covered!</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Costumes</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Costume 1">
+        <h3>Traditional Wear</h3>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Costume 2">
+        <h3>Fantasy Costumes</h3>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Costume 3">
+        <h3>Party Outfits</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="pranay more" required>
+      <input type="email" placeholder="pranaymore203@gmail.com" required>
+      <textarea placeholder="mob no.+919309110476"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="payment">
+    <h2>Make a Payment</h2>
+    <p>Pay securely via Google Pay or any UPI app.</p>
+    <div class="payment">
+      <a href="upi://pay?pa=pranaymore203@oksbi&pn=Costume Hub&am=100&cu=INR&tn=Costume Payment" class="btn">Pay ₹100 via Google Pay</a>
+    </div>
+    <p><small>please use valid UPI ID.</small></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Costume Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Your message has been sent. Thank you!');
+    });
+  </script>
+</body>
+</html>
